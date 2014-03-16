@@ -1,4 +1,4 @@
-var jQuery = require('jQuery');
+var jQuery = require('jquery');
 
 /*!
  * jQuery Color Animations v2.1.2

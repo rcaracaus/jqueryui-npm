@@ -1,4 +1,4 @@
-var jQuery = require('jQuery');
+var jQuery = require('jquery');
 require('./jquery.ui.core');
 require('./jquery.ui.mouse');
 require('./jquery.ui.widget');

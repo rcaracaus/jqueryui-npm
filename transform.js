@@ -7,7 +7,7 @@ fs.readdirSync(__dirname + '/ui').forEach(function(file) {
 
   var filename = __dirname + '/ui/' + file;
   var contents = fs.readFileSync(filename, 'utf8');
-  var prepend = ["var jQuery = require('jQuery');"];
+  var prepend = ["var jQuery = require('jquery');"];
 
   // parse dependencies in comments
   var deps = contents.match(/\s*\/* Depends:\s*\n(?:[\s\*]*(jquery\.ui\..+\.js)\s*\n)+/);
