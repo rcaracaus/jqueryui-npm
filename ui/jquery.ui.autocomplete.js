@@ -1,9 +1,3 @@
-var jQuery = require('jquery');
-require('./jquery.ui.core');
-require('./jquery.ui.widget');
-require('./jquery.ui.position');
-require('./jquery.ui.menu');
-
 /*!
  * jQuery UI Autocomplete 1.10.4
  * http://jqueryui.com

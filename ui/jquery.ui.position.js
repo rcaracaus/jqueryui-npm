@@ -1,5 +1,3 @@
-var jQuery = require('jquery');
-
 /*!
  * jQuery UI Position 1.10.4
  * http://jqueryui.com

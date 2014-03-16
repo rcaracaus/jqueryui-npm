@@ -1,8 +1,3 @@
-var jQuery = require('jquery');
-require('./jquery.ui.core');
-require('./jquery.ui.widget');
-require('./jquery.ui.position');
-
 /*!
  * jQuery UI Tooltip 1.10.4
  * http://jqueryui.com

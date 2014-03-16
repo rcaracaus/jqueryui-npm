@@ -1,6 +1,3 @@
-var jQuery = require('jquery');
-require('./jquery.ui.effect');
-
 /*!
  * jQuery UI Effects Highlight 1.10.4
  * http://jqueryui.com

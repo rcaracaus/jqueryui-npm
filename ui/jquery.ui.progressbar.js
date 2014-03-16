@@ -1,7 +1,3 @@
-var jQuery = require('jquery');
-require('./jquery.ui.core');
-require('./jquery.ui.widget');
-
 /*!
  * jQuery UI Progressbar 1.10.4
  * http://jqueryui.com

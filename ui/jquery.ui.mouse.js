@@ -1,6 +1,3 @@
-var jQuery = require('jquery');
-require('./jquery.ui.widget');
-
 /*!
  * jQuery UI Mouse 1.10.4
  * http://jqueryui.com
