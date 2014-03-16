@@ -1,3 +1,6 @@
+var jQuery = require('jQuery');
+require('./jquery.ui.core');
+
 /*!
  * jQuery UI Datepicker 1.10.4
  * http://jqueryui.com

@@ -1,3 +1,8 @@
+var jQuery = require('jQuery');
+require('./jquery.ui.core');
+require('./jquery.ui.widget');
+require('./jquery.ui.position');
+
 /*!
  * jQuery UI Menu 1.10.4
  * http://jqueryui.com

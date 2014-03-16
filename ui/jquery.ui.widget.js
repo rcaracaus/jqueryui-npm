@@ -1,3 +1,5 @@
+var jQuery = require('jQuery');
+
 /*!
  * jQuery UI Widget 1.10.4
  * http://jqueryui.com

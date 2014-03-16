@@ -1,3 +1,5 @@
+var jQuery = require('jQuery');
+
 /*!
  * jQuery UI Core 1.10.4
  * http://jqueryui.com

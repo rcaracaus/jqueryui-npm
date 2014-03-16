@@ -1,3 +1,8 @@
+var jQuery = require('jQuery');
+require('./jquery.ui.core');
+require('./jquery.ui.mouse');
+require('./jquery.ui.widget');
+
 /*!
  * jQuery UI Draggable 1.10.4
  * http://jqueryui.com

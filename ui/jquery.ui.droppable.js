@@ -1,3 +1,9 @@
+var jQuery = require('jQuery');
+require('./jquery.ui.core');
+require('./jquery.ui.widget');
+require('./jquery.ui.mouse');
+require('./jquery.ui.draggable');
+
 /*!
  * jQuery UI Droppable 1.10.4
  * http://jqueryui.com
