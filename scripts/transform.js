@@ -7,18 +7,32 @@ fs.readdirSync(__dirname + '/../ui').forEach(function(file) {
 
   var filename = __dirname + '/../ui/' + file;
   var contents = fs.readFileSync(filename, 'utf8');
-  var prepend = ["var jQuery = require('jquery');"];
+  var prepends = ["var jQuery = require('jquery');"];
 
-  // parse dependencies in comments
-  var deps = contents.match(/\s*\/* Depends:\s*\n(?:[\s\*]*(jquery\.ui\..+\.js)\s*\n)+/);
-  if (deps) {
-    deps[0].split('\n').slice(1, -1).forEach(function(dep) {
-      dep = dep.replace(/[\s\*]/g, '').replace(/^jquery[.-]ui\.(.+)\.js/, '$1');
-      prepend.push("require('./" + dep + "');");
-    });
+  // parse dependencies from AMD definition
+  var defs = contents.match(/define\(\[([^\]]+)\]/);
+
+  if (defs) {
+    var deps = defs[1]
+      .split('\n')
+      // remove clutter
+      .map(function(dep) {
+        return dep.replace(/[\s,"]/g, '');
+      })
+      // exluclude empty rows and jquery
+      .filter(function(dep) {
+        return dep !== '' && dep !== 'jquery';
+      }).
+      // build require syntax string
+      map(function(dep) {
+        return 'require("' + dep + '");';
+      });
+
+      prepends = prepends.concat(deps);
   }
 
-  // prepend jQuery require and all dependencies for the module
-  contents = prepend.join('\n') + '\n\n' + contents;
+  // prepends jQuery require and all dependencies for the module
+  contents = prepends.join('\n') + '\n\n' + contents;
+
   fs.writeFileSync(__dirname + '/../' + file.replace(/^jquery[.-]ui\.(.+)\.js/, '$1.js'), contents, 'utf8');
 });
