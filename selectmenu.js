@@ -1,4 +1,8 @@
 var jQuery = require('jquery');
+require("./core");
+require("./widget");
+require("./position");
+require("./menu");
 
 /*!
  * jQuery UI Selectmenu 1.11.4

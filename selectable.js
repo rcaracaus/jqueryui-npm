@@ -1,4 +1,7 @@
 var jQuery = require('jquery');
+require("./core");
+require("./mouse");
+require("./widget");
 
 /*!
  * jQuery UI Selectable 1.11.4

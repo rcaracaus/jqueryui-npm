@@ -1,4 +1,6 @@
 var jQuery = require('jquery');
+require("./core");
+require("./widget");
 
 /*!
  * jQuery UI Accordion 1.11.4

@@ -1,4 +1,7 @@
 var jQuery = require('jquery');
+require("./core");
+require("./widget");
+require("./button");
 
 /*!
  * jQuery UI Spinner 1.11.4

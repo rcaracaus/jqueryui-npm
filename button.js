@@ -1,4 +1,6 @@
 var jQuery = require('jquery');
+require("./core");
+require("./widget");
 
 /*!
  * jQuery UI Button 1.11.4

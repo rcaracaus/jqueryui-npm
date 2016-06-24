@@ -1,4 +1,5 @@
 var jQuery = require('jquery');
+require("./effect");
 
 /*!
  * jQuery UI Effects Highlight 1.11.4

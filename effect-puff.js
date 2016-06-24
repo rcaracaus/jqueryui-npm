@@ -1,4 +1,6 @@
 var jQuery = require('jquery');
+require("./effect");
+require("./effect-scale");
 
 /*!
  * jQuery UI Effects Puff 1.11.4

@@ -1,4 +1,11 @@
 var jQuery = require('jquery');
+require("./core");
+require("./widget");
+require("./button");
+require("./draggable");
+require("./mouse");
+require("./position");
+require("./resizable");
 
 /*!
  * jQuery UI Dialog 1.11.4

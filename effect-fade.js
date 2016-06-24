@@ -1,4 +1,5 @@
 var jQuery = require('jquery');
+require("./effect");
 
 /*!
  * jQuery UI Effects Fade 1.11.4

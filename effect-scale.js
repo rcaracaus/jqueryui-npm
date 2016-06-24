@@ -1,4 +1,6 @@
 var jQuery = require('jquery');
+require("./effect");
+require("./effect-size");
 
 /*!
  * jQuery UI Effects Scale 1.11.4

@@ -1,4 +1,7 @@
 var jQuery = require('jquery');
+require("./core");
+require("./mouse");
+require("./widget");
 
 /*!
  * jQuery UI Resizable 1.11.4
